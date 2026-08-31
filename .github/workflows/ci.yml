@@ -1,0 +1,48 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  manifests:
+    name: Manifests parse and point somewhere real
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Valid JSON
+        run: |
+          for f in bucket/*.json; do
+            python3 -c "import json,sys; json.load(open(sys.argv[1]))" "$f" || exit 1
+          done
+
+      - name: Every download URL still resolves
+        run: |
+          fail=0
+          for f in bucket/*.json; do
+            for url in $(python3 -c "
+          import json,sys
+          d=json.load(open(sys.argv[1]))
+          urls=[]
+          def walk(o):
+              if isinstance(o,dict):
+                  if 'url' in o and isinstance(o['url'],str) and o['url'].startswith('http'):
+                      urls.append(o['url'])
+                  for k,v in o.items():
+                      if k!='autoupdate': walk(v)
+              elif isinstance(o,list):
+                  for v in o: walk(v)
+          walk(d)
+          print('\n'.join(urls))" "$f"); do
+              code=$(curl -sIL -o /dev/null -w '%{http_code}' "$url")
+              echo "$code $url"
+              [ "$code" = "200" ] || fail=1
+            done
+          done
+          exit $fail
