@@ -23,8 +23,8 @@ scoop install tlk/tlk-visual
 
 ## Verifying what you installed
 
-Both projects attest their release builds, so the binary Scoop downloaded can be traced back
-to the workflow run that produced it:
+From the next release of each tool onwards, builds carry a GitHub attestation, so the binary
+Scoop downloaded can be traced back to the workflow run that produced it:
 
 ```powershell
 gh attestation verify (scoop prefix wymcmd | Join-Path -ChildPath wymcmd.exe) --owner Talkdedsec
