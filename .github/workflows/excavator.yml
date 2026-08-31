@@ -12,10 +12,10 @@ jobs:
   excavate:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
 
       - name: Look for new releases and update the manifests
-        uses: ScoopInstaller/GithubActions@main
+        uses: ScoopInstaller/GithubActions@v3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SKIP_UPDATED: "1"
