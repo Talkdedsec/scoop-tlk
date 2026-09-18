@@ -1,0 +1,30 @@
+name: Packaging problem
+description: A manifest in this bucket installs or updates the wrong thing
+labels: [packaging]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A bug in one of the tools belongs in that tool's own repository. This form
+        is for the packaging: the wrong architecture, a missing shim, a hash that
+        no longer matches, an update that never arrives.
+  - type: input
+    id: app
+    attributes:
+      label: Which manifest
+      placeholder: wymcmd, tlk-visual, tlk-tune or wsmf
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: Paste the scoop output, including the command you ran.
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: scoop and Windows version
+      placeholder: scoop --version output, and Windows 11 23H2 x64
