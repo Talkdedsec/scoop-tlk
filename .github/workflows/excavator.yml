@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v7
 
       - name: Look for new releases and update the manifests
-        uses: ScoopInstaller/GithubActions@v3
+        uses: ScoopInstaller/GithubActions@5bceeda181721d9d10a18fdcc3ddca6f33467ae6 # v3.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SKIP_UPDATED: "1"
