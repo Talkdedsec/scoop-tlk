@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Bug in wymcmd
+    url: https://github.com/Talkdedsec/tlk-wymcmd/issues/new/choose
+    about: The tool itself misbehaves, rather than the way it was installed.
+  - name: Bug in tlk-visual
+    url: https://github.com/Talkdedsec/tlk-visual/issues/new/choose
+    about: The tool itself misbehaves, rather than the way it was installed.
+  - name: Bug in tlk-tune
+    url: https://github.com/Talkdedsec/tlk-tune/issues/new/choose
+    about: The tool itself misbehaves, rather than the way it was installed.
+  - name: Bug in wsmf
+    url: https://github.com/Talkdedsec/tlk-wsmf/issues/new/choose
+    about: The tool itself misbehaves, rather than the way it was installed.
