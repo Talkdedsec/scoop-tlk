@@ -1,5 +1,7 @@
 # scoop-tlk
 
+**English** · [Türkçe](README.tr.md)
+
 A [Scoop](https://scoop.sh) bucket for the Talkdedsec tools. Windows, no installer, no
 admin rights, and `scoop update` keeps them current.
 
