@@ -17,16 +17,18 @@ scoop bucket add tlk https://github.com/Talkdedsec/scoop-tlk
 | [`tlk-visual`](https://github.com/Talkdedsec/tlk-visual) | Gerçek zamanlı ekran renk motoru — parlaklık, kontrast, gama, renk sıcaklığı ve gece görüşü doğrudan ekranın gama tablosuna yazılır. Sürücü yok, enjeksiyon yok. | GPL-3.0-or-later |
 | [`tlk-tune`](https://github.com/Talkdedsec/tlk-tune) | Terminal müzik çalar — konsolda albüm kapağı, senkronize şarkı sözleri ve on bantlı ekolayzer; fare ya da klavyeyle kullanılır. Tek exe, ffmpeg gerekmez. | MIT |
 | [`wsmf`](https://github.com/Talkdedsec/tlk-wsmf) | Klavye odağını çalan uygulamayı adıyla söyler ve bunu bir daha yapmasını engeller. Tepsi programı, klavye kancası yok. | MIT |
+| [`tlk-pdf`](https://github.com/Talkdedsec/tlk-pdf) | Cihazında çalışan PDF düzenleyici — yazı, imza, form doldurma, vurgulama, beyazla kapatma; sayfaları birleştirme, bölme, sıralama ve döndürme. Tarayıcıda da çalışır. | MIT |
 
 ```powershell
 scoop install tlk/wymcmd
 scoop install tlk/tlk-visual
 scoop install tlk/tlk-tune
 scoop install tlk/wsmf
+scoop install tlk/tlk-pdf
 ```
 
 `wymcmd` x64 ve arm64 derlemeleriyle gelir, Scoop doğru olanı seçer. Diğerleri yalnızca x64.
-`tlk-tune` iki adla kurulur: `tlk-tune` ve `tune`.
+`tlk-tune` iki adla kurulur: `tlk-tune` ve `tune`. `tlk-pdf` Başlat menüsüne eklenir ve dosya açan bir `tlk-pdf` komutu getirir: `tlk-pdf form.pdf`.
 
 ## Kurduğun şeyi doğrulamak
 

@@ -17,16 +17,18 @@ scoop bucket add tlk https://github.com/Talkdedsec/scoop-tlk
 | [`tlk-visual`](https://github.com/Talkdedsec/tlk-visual) | Real-time screen colour engine — brightness, contrast, gamma, temperature and night vision written straight to the display gamma ramp. No driver, no injection. | GPL-3.0-or-later |
 | [`tlk-tune`](https://github.com/Talkdedsec/tlk-tune) | Terminal music player — album art, synced lyrics and a ten-band equaliser in the console, driven by mouse or keyboard. One executable, no ffmpeg. | MIT |
 | [`wsmf`](https://github.com/Talkdedsec/tlk-wsmf) | Names the application that stole your keyboard focus and stops it doing it again. Tray program, no keyboard hook. | MIT |
+| [`tlk-pdf`](https://github.com/Talkdedsec/tlk-pdf) | PDF editor that runs on your device — text, signatures, form filling, highlights, white-out, merge, split, reorder and rotate pages. Also in the browser. | MIT |
 
 ```powershell
 scoop install tlk/wymcmd
 scoop install tlk/tlk-visual
 scoop install tlk/tlk-tune
 scoop install tlk/wsmf
+scoop install tlk/tlk-pdf
 ```
 
 `wymcmd` ships x64 and arm64 builds and Scoop picks the right one. The rest are x64 only.
-`tlk-tune` installs under two names, `tlk-tune` and `tune`.
+`tlk-tune` installs under two names, `tlk-tune` and `tune`. `tlk-pdf` adds a Start menu entry and a `tlk-pdf` command that opens a file: `tlk-pdf form.pdf`.
 
 ## Verifying what you installed
 
