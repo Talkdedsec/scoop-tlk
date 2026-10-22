@@ -19,3 +19,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SKIP_UPDATED: "1"
+          USER_NAME: Talkdedsec
+          USER_EMAIL: 292909750+Talkdedsec@users.noreply.github.com
