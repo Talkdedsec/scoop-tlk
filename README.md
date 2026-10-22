@@ -58,3 +58,7 @@ architecture, a shim that does not appear on `PATH`, a hash that no longer match
 The manifests here are MIT. They only describe how to install software published
 elsewhere — each application carries its own licence, linked from its manifest and
 from the table above.
+
+<p align="center">
+  <sub>Built by <a href="https://talkdedsec.com">Talkdedsec</a></sub>
+</p>

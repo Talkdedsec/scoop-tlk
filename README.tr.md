@@ -57,3 +57,7 @@ görünmeyen bir shim, artık eşleşmeyen bir hash.
 
 Buradaki manifestler MIT lisanslı. Yalnızca başka yerde yayımlanan yazılımın nasıl kurulacağını
 tarif ederler; her uygulamanın kendi lisansı var, bağlantısı manifestinde ve yukarıdaki tabloda.
+
+<p align="center">
+  <sub><a href="https://talkdedsec.com">Talkdedsec</a> tarafından yapıldı</sub>
+</p>
