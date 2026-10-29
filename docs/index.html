@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>scoop-tlk — the Talkdedsec Windows tools, one bucket</title>
+<meta name="description" content="A Scoop bucket for the Talkdedsec Windows tools: wymcmd, tlk-visual, tlk-tune, wsmf and tlk-pdf. No installer, no admin rights, kept current every day.">
+<link rel="canonical" href="https://talkdedsec.github.io/scoop-tlk/">
+<meta name="theme-color" content="#1a1a1a">
+<meta name="color-scheme" content="dark">
+<meta property="og:type" content="website">
+<meta property="og:title" content="scoop-tlk — the Talkdedsec Windows tools, one bucket">
+<meta property="og:description" content="scoop bucket add tlk, then install any of the tools. No installer, no admin rights, updated daily.">
+<meta property="og:url" content="https://talkdedsec.github.io/scoop-tlk/">
+<meta property="og:image" content="https://talkdedsec.github.io/scoop-tlk/og.png">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="640">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231a1a1a'/%3E%3Cpath d='M8 13h16l-2 11H10z' fill='%23FFD600'/%3E%3Cpath d='M11 13a5 5 0 0110 0' fill='none' stroke='%23FFD600' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=DM+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="site.css">
+<script src="site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+<header class="top">
+  <a class="brand" href="#top"><span>tlk</span>/scoop</a>
+  <nav class="nav" aria-label="Sections">
+    <a href="#shelf" data-i18n="nav.shelf">The tools</a>
+    <a href="#verify" data-i18n="nav.verify">Verify</a>
+    <a href="#issues" data-i18n="nav.issues">Problems</a>
+  </nav>
+  <div class="top-end">
+    <button class="lang" type="button" aria-label="Türkçe / English"><span data-l="en">EN</span><span data-l="tr">TR</span></button>
+    <a class="gh" href="https://github.com/Talkdedsec/scoop-tlk" aria-label="Source on GitHub"><svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <p class="over mono" data-i18n="hero.over">A Scoop bucket · Windows · no installer · no admin rights</p>
+  <h1 class="display"><span id="h-count">Five</span> <span data-i18n="hero.a">tools.</span><br><span class="hl" data-i18n="hero.b">One line.</span></h1>
+  <div class="cmd-hero">
+    <pre class="mono"><span class="ps">PS&gt;</span> <code id="add">scoop bucket add tlk https://github.com/Talkdedsec/scoop-tlk</code></pre>
+    <button class="copy big" type="button" data-copy="#add" data-i18n="copy">Copy</button>
+  </div>
+  <p class="lede" data-i18n="hero.lede">Small Windows tools, each one executable, each doing one thing properly. Add the bucket once and scoop update keeps every one of them current.</p>
+</section>
+
+<section class="shelf" id="shelf">
+  <div class="shelf-head">
+    <p class="over mono" data-i18n="s.over">01 — What is in it</p>
+    <h2 class="h2" data-i18n="s.h">Pick what you want. The command writes itself.</h2>
+    <p class="meta mono" id="fresh" aria-live="polite"></p>
+  </div>
+  <ul class="apps" aria-label="Apps in the bucket" data-i18n-aria="s.list"></ul>
+
+  <div class="builder">
+    <div class="term">
+      <div class="term-bar mono"><i></i><i></i><i></i><span>Windows PowerShell</span><button class="copy" type="button" data-copy="#cmd" data-i18n="copy">Copy</button></div>
+      <pre class="mono"><code id="cmd"></code></pre>
+      <ol class="out mono" aria-live="polite"></ol>
+    </div>
+    <div class="builder-side">
+      <p class="mono k" data-i18n="b.k">selected</p>
+      <p class="sel-n"><b id="sel-n">0</b> <span data-i18n="b.of">of</span> <span id="sel-t">0</span></p>
+      <button class="run" type="button" id="run"><span data-i18n="b.run">Preview the install</span> <span aria-hidden="true">→</span></button>
+      <p class="hint" data-i18n="b.hint">The preview prints what Scoop prints. Nothing runs on your machine until you paste the command yourself.</p>
+    </div>
+  </div>
+</section>
+
+<section class="notes">
+  <div class="note reveal"><b class="mono">arm64</b><p data-i18n="n.1">wymcmd ships x64 and arm64 builds and Scoop picks the right one. The rest are x64 only.</p></div>
+  <div class="note reveal"><b class="mono">tune</b><p data-i18n="n.2">tlk-tune installs under two names, tlk-tune and tune.</p></div>
+  <div class="note reveal"><b class="mono">tlk-pdf form.pdf</b><p data-i18n="n.3">tlk-pdf adds a Start menu entry and a command that opens a file.</p></div>
+</section>
+
+<section class="verify" id="verify">
+  <div>
+    <p class="over mono" data-i18n="v.over">02 — Verifying what you installed</p>
+    <h2 class="h2" data-i18n-html="v.h">A checksum says it arrived intact. <span class="hl">An attestation says who built it.</span></h2>
+    <p class="body" data-i18n="v.p">Builds carry a GitHub attestation, so the binary Scoop downloaded can be traced back to the commit and the workflow run that produced it.</p>
+  </div>
+  <div class="vcode">
+    <pre class="mono"><code id="att">gh attestation verify (scoop prefix wymcmd | Join-Path -ChildPath wymcmd.exe) --owner Talkdedsec</code></pre>
+    <button class="copy" type="button" data-copy="#att" data-i18n="copy">Copy</button>
+  </div>
+</section>
+
+<section class="current">
+  <p class="big reveal" data-i18n-html="c.big"><span class="hl">excavator</span> runs every day.</p>
+  <p class="body reveal" data-i18n="c.p">It notices a new release upstream, updates the manifest and commits it. Nothing here is updated by hand unless the shape of a release changes.</p>
+</section>
+
+<section class="issues" id="issues">
+  <div class="split">
+    <div class="reveal">
+      <p class="over mono" data-i18n="i.over">03 — Reporting a problem</p>
+      <p class="body" data-i18n="i.p1">A bug in a tool belongs in that tool’s repository. Open an issue here only when the packaging is what is wrong:</p>
+      <ul class="wrong">
+        <li data-i18n="i.a">a manifest that installs the wrong architecture</li>
+        <li data-i18n="i.b">a shim that does not appear on PATH</li>
+        <li data-i18n="i.c">a hash that no longer matches</li>
+      </ul>
+    </div>
+    <div class="reveal">
+      <p class="over mono" data-i18n="l.over">Licence</p>
+      <p class="body" data-i18n="l.p">The manifests here are MIT. They only describe how to install software published elsewhere; each application carries its own licence, shown on its card above.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <p class="foot-word" aria-hidden="true">scoop install <span>tlk/</span></p>
+  <div class="foot-row">
+    <nav aria-label="Project">
+      <a href="https://github.com/Talkdedsec/scoop-tlk">GitHub</a>
+      <a href="https://scoop.sh">scoop.sh</a>
+      <a href="https://github.com/Talkdedsec/scoop-tlk/security/policy" data-i18n="foot.sec">Security</a>
+    </nav>
+    <p class="mono">MIT · © 2026 <a href="https://talkdedsec.com">Talkdedsec</a></p>
+  </div>
+</footer>
+</body>
+</html>
