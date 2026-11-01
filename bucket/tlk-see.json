@@ -1,0 +1,30 @@
+{
+    "version": "1.1.0",
+    "description": "TempleOS's oracle in your terminal: a word, a percentage spread and a date, drawn from the clock when you press a key.",
+    "homepage": "https://github.com/Talkdedsec/tlk-see",
+    "license": "MIT",
+    "notes": [
+        "Run `tlk-see` and tap any key when asked; ESC quits. Also `tlk-see bible`, `song`, `doodle`, and `--tr` for Turkish.",
+        "In the browser: https://talkdedsec.github.io/tlk-see/"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Talkdedsec/tlk-see/releases/download/v1.1.0/tlk-see-v1.1.0-windows-x86_64.exe#/tlk-see.exe",
+            "hash": "1c8459f202f7a99641d3adf2f717b9d96285270716716af96e71bee6962a5f5f"
+        }
+    },
+    "bin": "tlk-see.exe",
+    "checkver": {
+        "github": "https://github.com/Talkdedsec/tlk-see"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Talkdedsec/tlk-see/releases/download/v$version/tlk-see-v$version-windows-x86_64.exe#/tlk-see.exe"
+            }
+        },
+        "hash": {
+            "url": "https://github.com/Talkdedsec/tlk-see/releases/download/v$version/tlk-see-v$version-windows-x86_64.exe.sha256"
+        }
+    }
+}

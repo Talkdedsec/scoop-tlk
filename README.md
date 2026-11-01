@@ -18,6 +18,7 @@ scoop bucket add tlk https://github.com/Talkdedsec/scoop-tlk
 | [`tlk-tune`](https://github.com/Talkdedsec/tlk-tune) | Terminal music player — album art, synced lyrics and a ten-band equaliser in the console, driven by mouse or keyboard. One executable, no ffmpeg. | MIT |
 | [`wsmf`](https://github.com/Talkdedsec/tlk-wsmf) | Names the application that stole your keyboard focus and stops it doing it again. Tray program, no keyboard hook. | MIT |
 | [`tlk-pdf`](https://github.com/Talkdedsec/tlk-pdf) | PDF editor that runs on your device — text, signatures, form filling, highlights, white-out, merge, split, reorder and rotate pages. Also in the browser. | MIT |
+| [`tlk-see`](https://github.com/Talkdedsec/tlk-see) | TempleOS's oracle in your terminal — a word, a percentage spread and a date, drawn from the clock at the instant you press a key. Scripture, songs and sprites too. Also in the browser. | MIT |
 
 ```powershell
 scoop install tlk/wymcmd
@@ -25,6 +26,7 @@ scoop install tlk/tlk-visual
 scoop install tlk/tlk-tune
 scoop install tlk/wsmf
 scoop install tlk/tlk-pdf
+scoop install tlk/tlk-see
 ```
 
 `wymcmd` ships x64 and arm64 builds and Scoop picks the right one. The rest are x64 only.

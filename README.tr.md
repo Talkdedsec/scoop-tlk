@@ -18,6 +18,7 @@ scoop bucket add tlk https://github.com/Talkdedsec/scoop-tlk
 | [`tlk-tune`](https://github.com/Talkdedsec/tlk-tune) | Terminal müzik çalar — konsolda albüm kapağı, senkronize şarkı sözleri ve on bantlı ekolayzer; fare ya da klavyeyle kullanılır. Tek exe, ffmpeg gerekmez. | MIT |
 | [`wsmf`](https://github.com/Talkdedsec/tlk-wsmf) | Klavye odağını çalan uygulamayı adıyla söyler ve bunu bir daha yapmasını engeller. Tepsi programı, klavye kancası yok. | MIT |
 | [`tlk-pdf`](https://github.com/Talkdedsec/tlk-pdf) | Cihazında çalışan PDF düzenleyici — yazı, imza, form doldurma, vurgulama, beyazla kapatma; sayfaları birleştirme, bölme, sıralama ve döndürme. Tarayıcıda da çalışır. | MIT |
+| [`tlk-see`](https://github.com/Talkdedsec/tlk-see) | TempleOS'un kahini terminalde — tuşa bastığın anda okunan saatten bir kelime, yüzde dağılımı ve tahmini tarih. Ayet, ezgi ve sprite de var. Tarayıcıda da çalışır. | MIT |
 
 ```powershell
 scoop install tlk/wymcmd
@@ -25,6 +26,7 @@ scoop install tlk/tlk-visual
 scoop install tlk/tlk-tune
 scoop install tlk/wsmf
 scoop install tlk/tlk-pdf
+scoop install tlk/tlk-see
 ```
 
 `wymcmd` x64 ve arm64 derlemeleriyle gelir, Scoop doğru olanı seçer. Diğerleri yalnızca x64.
